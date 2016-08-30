@@ -1,3 +1,4 @@
 https://gist.github.com/cactus/3925422
 https://help.github.com/articles/creating-an-access-token-for-command-line-use/
 
+http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github/18362082#18362082
