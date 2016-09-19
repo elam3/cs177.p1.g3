@@ -1,0 +1,12 @@
+Project 1 Group 1
+
+The user can submit their answers
+
+The owner can receive the answers
+
+There is a collection of answers
+
+Each user should have an individual code that identifies them, and store
+information about them
+
+Users must be able to see the results
