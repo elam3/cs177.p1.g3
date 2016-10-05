@@ -1,4 +1,4 @@
-# CS177 FALL 2016 PROJ1 GRP3
+﻿# CS177 FALL 2016 PROJ1 GRP3
 
 ## Requirements
 * Shall function on a mobile browser
@@ -25,7 +25,7 @@ Students go to the quiz page he provides them, while Sam goes to the admin page.
 * There will be a button that allows the teacher to display the information.
 * If they choose to display the information as a bar chart, a bar chart graphic will be shown which displays the number of responses to each question.
 * They can select via radio button which was the correct response.
-Quiz Page
+####Quiz Page
 * Will display multiple choice radio buttons A-E. Student will be able to select one and there will be a submit button which is inactive until the teacher starts the timer.
 * When the teacher starts the timer the page will refresh and students will be allowed to click the submit button. When the timer stops this button will be greyed out.
 
