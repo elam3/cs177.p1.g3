@@ -21,9 +21,9 @@ Students go to the quiz page he provides them, while Sam goes to the admin page.
 
 ####Administrative Page
 * There will be a Start/Stop button and a timer. When the start button is pressed the timer will start counting up in seconds. When the start/stop button is pressed again the timer will stop. Only when the timer is running can the students input their answers, and vice versa, only when the timer is running can the teacher receive their responses. 
-* There will be a counter which displays the number of responses that are being submitted, so that the teacher knows when they can stop the timer.
-* There will be a button that allows the teacher to display the received information from the students.
-* If they choose to display the information as a bar chart, a bar graph will be shown which displays the number of responses to each question and the students' inputted answers.
+* There will be a counter which displays the number of responses that are being submitted, so that the teacher knows when the majority of the students have inputted their responses so he can stop the timer.
+* There will be a button that allows the teacher to display the received information (responses) from the students.
+* If they choose to display the information (responses) as a bar chart, a bar graph will be shown which displays the number of responses to each question and the students' inputted answers.
 
 ####Quiz Page
 * Will display multiple choice radio buttons A-E. Student will be able to select one and there will be a submit button which is inactive until the teacher starts the timer.
