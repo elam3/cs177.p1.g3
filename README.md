@@ -8,7 +8,7 @@
 
 ## Functional Specification
 ### iClicker Functional Specification
-By Owen Goodwin
+By Owen Goodwin, Alex, Ruby, Karen, Edison, Hazel
 ### Overview
 iClicker is a service that allows students to take in class quizzes on the web.
 ### Scenarios
