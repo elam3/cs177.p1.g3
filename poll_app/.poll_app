@@ -1,0 +1,6 @@
+poll_app=/home/neby/Documents/TEMP/django_tut01/poll_app/poll_app  flags=r {
+__init__.py
+settings.py
+urls.py
+wsgi.py
+}
