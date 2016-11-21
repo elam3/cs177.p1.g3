@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to weClicker</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCbAgiS2GHz_1fvasyFqTxoRxT5vLWotTA",
+      authDomain: "weclicker.firebaseapp.com",
+      databaseURL: "https://weclicker.firebaseio.com",
+      storageBucket: "weclicker.appspot.com",
+      messagingSenderId: "790459566642"
+    };
+    firebase.initializeApp(config);
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="index.js" async></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-yellow.min.css" />
+   
+    <link rel="stylesheet" type="text/css" href="index.css">
+  
+  </head>
+  <body>
+ 
+     <dialog class="mdl-dialog" id="accountSetUp">
+     <h4 class="mdl-dialog__title">weClicker</h4>
+         <div class="mdl-tabs mdl-js-tabs">
+            <div class="mdl-tabs__tab-bar">
+               <a href="#tab1-panel" class="mdl-tabs__tab is-active">Sign Up</a>
+               <a href="#tab2-panel" class="mdl-tabs__tab">Sign In</a>
+            </div>
+            <div class="mdl-tabs__panel is-active" id="tab1-panel">
+                <div class="mdl-dialog__content">
+                <p id="loginError"></p>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="nameForm">
+                  <input class="mdl-textfield__input" type="text" id="name">
+                  <label class="mdl-textfield__label" for="name">Name...</label>
+                </div>
+               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="email" id="email">
+                 <label class="mdl-textfield__label" for="email">Email...</label>
+                </div>
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="password">
+                 <label class="mdl-textfield__label" for="password">Password...</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="roleForm">
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+                    <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="Admin" checked>
+                     <span class="mdl-radio__label">Admin</span>
+                    </label>
+                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                      <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="Student">
+                    <span class="mdl-radio__label">Student</span>
+                </label>
+                </div>
+              </div>
+              <div class="mdl-dialog__actions">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"id="signUpBtn">Sign Up</button>
+             </div>
+            </div>
+
+            <div class="mdl-tabs__panel" id="tab2-panel">
+              <div class="mdl-dialog__content">
+                <p id="loginError-si"></p>
+               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="email" id="email-si">
+                 <label class="mdl-textfield__label" for="email-si">Email...</label>
+                </div>
+                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="password" id="password-si">
+                 <label class="mdl-textfield__label" for="password-si">Password...</label>
+                </div>
+                <div class="mdl-dialog__actions">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="signInBtn">Sign In</button>
+               </div>
+           </div>
+          </div>
+
+    </div>
+
+    </dialog>
+  </body>
+
+</html>
