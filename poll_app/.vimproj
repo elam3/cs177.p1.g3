@@ -6,7 +6,7 @@ urls.py
 wsgi.py
 }
 
-polls=./polls {
+polls=polls {
 __init__.py
 admin.py
 apps.py
@@ -15,6 +15,9 @@ models.py
 tests.py
 views.py
 urls.py
+template=templates/polls {
+ index.html
+}
 }
 
 migration=./polls/migrations {
