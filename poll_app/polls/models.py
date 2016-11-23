@@ -3,7 +3,17 @@ import datetime
 from django.utils import timezone
 
 # Create your models here.
+'''
+class Quiz(models.Model):
+    quiz_text = models.CharField(max_length=200)
+    isActive = models.BooleanField(default=False)
+
+    def __str__(self) -> str:
+        return "[" + self.quiz_text + "] Active Status: " + str(self.isActive)
+'''
+
 class Question(models.Model):
+#    quiz_text = models.ForeignKey(Quiz, on_delete=models.CASCADE)
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
 
