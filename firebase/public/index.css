@@ -1,4 +1,6 @@
-
+dialog {
+	position: fixed;
+}
 
 #loginError {
 	display: none;

@@ -7,6 +7,12 @@ $(document).ready(function() {
 	$("#submitbutton").click(function(){
 		submitButton();
 	});
+
+	$("input[name='choice']").change(function(){
+		$("div.checked").removeClass("checked");
+		$(this).closest("div").toggleClass("checked");
+	});
+
 	
 	 $("#logout").click(function(){
         firebase.auth().signOut().then(function() {

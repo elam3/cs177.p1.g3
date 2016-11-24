@@ -10,14 +10,20 @@
 
 
 $(document).ready(function(){
+	var dialog = document.querySelector('dialog');
+    dialogPolyfill.registerDialog(dialog);
+     // dialog.showModal();
 	$("#signInBtn").click(function(){
 		var email = $("#email-si").val();
 		var password = $("#password-si").val();
 		firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
-			$("#loginError").show().text(error.message);
+			$("#loginError-si").show().text(error.message);
 		});
-	}).catch(function(error) {
-  			$("#loginError-si").show().text(error.message);
+	});
+
+	$("#help").click(function() {
+		window.location.href = 'help.html';
+
 	});
 
 	$("#signUpBtn").click(function(){

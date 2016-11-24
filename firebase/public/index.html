@@ -16,20 +16,29 @@
     firebase.initializeApp(config);
   </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <script type="text/javascript" src="index.js" async></script>
+    <script type="text/javascript" src="dialog-polyfill.js"></script>
+     
+    <link rel="stylesheet" type="text/css" href="dialog-polyfill.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-yellow.min.css" />
-   
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-yellow.min.css"/>
+  
     <link rel="stylesheet" type="text/css" href="index.css">
   
   </head>
   <body>
  
      <dialog class="mdl-dialog" id="accountSetUp">
-     <h4 class="mdl-dialog__title">weClicker</h4>
+     <h4 class="mdl-dialog__title">weClicker  
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" id="help">
+              <i class="material-icons">add</i>
+          </button>
+      </h4>
+          
+
          <div class="mdl-tabs mdl-js-tabs">
             <div class="mdl-tabs__tab-bar">
                <a href="#tab1-panel" class="mdl-tabs__tab is-active">Sign Up</a>
