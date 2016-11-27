@@ -1,8 +1,3 @@
-$(document).ready(function() {
-	
-	$("#submitbutton").click(function(){
-		submitButton();
-	});
-
-
-});
+function submitButton() {
+	window.alert("Your response has been recorded");
+}
