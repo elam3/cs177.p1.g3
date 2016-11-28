@@ -7,7 +7,7 @@ Overview weClick is a service that allows students to take in class quizzes on t
 Scenarios 
  
 Scenario 1: Sam 
-Sam is a teacher that wants quick feedback in class to see how well students are following the lectures. He decides to do a quick survey in class that is graded in real time and lets students see how well they are doing. He uses the weClick to do this.  
+Sam is a teacher that wants quick feedback in class to see how well students are following the lectures. He decides to do a quick survey in class and lets students see how well they are doing. He uses weClick to do this.  
  
 Students go to the quiz page he provides them, while Sam goes to the admin page. Sam begins the quiz by posting a question in his powerpoint and starts the timer. The students make their selection on their devices. He then stops the timer. He clicks on the results button and displays a bar chart of the number of responses received for each input. He resets and refreshes the page for another question. 
  
@@ -22,7 +22,7 @@ Administrative Page
  
 Quiz Page 
  
-●	Will display multiple choice buttons A-E. Student will be able to input a selection. There will be a submit button.
+●	Will display multiple choice buttons A-E. Student will be able to select their response. There will be a submit button.
  
 Nice to haves: 
 
