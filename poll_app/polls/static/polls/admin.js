@@ -9,7 +9,7 @@ $(document).ready(function(){
         document.getElementById("sec").innerHTML = "00";
         document.getElementById("min").innerHTML = "00";
         data = [];
-        clearData();
+        //clearData();
 
     });
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
         drawChart();
     });
 
+/*
     $("#logout").click(function(){
         firebase.auth().signOut().then(function() {
             window.location.href = 'index.html'
@@ -36,7 +37,7 @@ $(document).ready(function(){
             console.error('Sign Out Error', error);
         });
     });
-
+*/
 
 });
 
@@ -61,16 +62,18 @@ function time() {
 
 function drawChart() {
     
+/*
     var firebaseRef = firebase.database().ref();
     firebaseRef.once("value").then(function(snapshot){
         snapshot.forEach(function(childSnapshot){
             var counts = childSnapshot.val();
-            data.push(counts);
+            //data.push(counts);
             draw(data);
 
         });
     });
-
+*/
+    draw(data);
     
 }
 

@@ -24,7 +24,7 @@ poll_app=/home/neby/Documents/TEMP/django_tut01/poll_app flags=r {
    style.css
    detail.css
    detail.js
-   Chart.js
+   Chart.min.js
    admin.css
    admin.html
    admin.js
