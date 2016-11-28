@@ -17,6 +17,8 @@ views.py
 urls.py
 template=templates/polls {
  index.html
+ detail.html
+ results.html
 }
 }
 
