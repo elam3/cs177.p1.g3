@@ -15,19 +15,19 @@ Specification
  
 Administrative Page 
  
-●	There will be a Start/Stop button and a timer. When the start button is pressed the timer will start counting up in seconds. When the start/stop button is pressed again the timer will stop. 
-●	There will be a counter which displays the number of responses that are being submitted, so that the teacher knows when they can stop the timer. 
-●	There will be a button that allows the teacher to display the information. 
+●	There will be a Start/Stop button and a timer. When the start button is pressed the timer will start counting up in seconds. When the start/stop button is pressed again the timer will stop.  
+●	There will be a results button that allows the teacher to display the information. 
 ●	If they choose to display the information, a bar chart graphic will be shown which displays the number of responses to each question. 
  
  
 Quiz Page 
  
-●	Will display multiple choice radio buttons A-E. Student will be able to make a selection. There will be a submit button which is inactive until the teacher starts the timer. 
-●	When the teacher starts the timer, the page will refresh and students will be allowed to click the submit button. When the timer stops, this button will be greyed out.  
+●	Will display multiple choice radio buttons A-E. Student will be able to make a selection. There will be a submit button.
+●	When the teacher starts the timer, students will be allowed to click the submit button.
  
 Nice to haves: 
-●	different options for visualizing the data ● a way to record the test and save for later. 
+●	different options for visualizing the data 
+● a way to record the test and save for later. 
 ●	A way to author the questions and send to the students so they can visualize on their screens. 
 ●	Sending the correct response to the students, or notifying them they got it right. 
 ●	Allowing the student to submit text input. (I.e. choice E can be “Other: ____”) 
