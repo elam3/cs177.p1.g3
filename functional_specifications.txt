@@ -9,20 +9,20 @@ Scenarios
 Scenario 1: Sam 
 Sam is a teacher that wants quick feedback in class to see how well students are following the lectures. He decides to do a quick survey in class that is graded in real time and lets students see how well they are doing. He uses the weClick to do this.  
  
-Students go to the quiz page he provides them, while Sam goes to the admin page. Sam begins the quiz by posting a question in his powerpoint and starts the timer. The students make their selection on their devices. He sees that most of the class has responded by looking at the response counter. He then stops the timer. He clicks on the visualization button and displays a chart of how the students have done. He refreshes and starts the timer over again, this process repeats for about five more questions. 
+Students go to the quiz page he provides them, while Sam goes to the admin page. Sam begins the quiz by posting a question in his powerpoint and starts the timer. The students make their selection on their devices. He then stops the timer. He clicks on the results button and displays a bar chart of the number of responses received for each input. He refreshes, resets, and starts the timer over again for another question. 
  
 Specification 
  
 Administrative Page 
  
 ●	There will be a Start/Stop button and a timer. When the start button is pressed the timer will start counting up in seconds. When the start/stop button is pressed again the timer will stop.  
-●	There will be a results button that allows the teacher to display the information. 
-●	If they choose to display the information, a bar chart graphic will be shown which displays the number of responses to each question. 
+●	There will be a results button that allows the teacher to display the information / results. 
+●	On the results page, a bar chart will be shown which displays the number of responses to each choice (A, B, C, D, E). 
  
  
 Quiz Page 
  
-●	Will display multiple choice radio buttons A-E. Student will be able to make a selection. There will be a submit button.
+●	Will display multiple choice buttons A-E. Student will be able to input a selection. There will be a submit button.
 ●	When the teacher starts the timer, students will be allowed to click the submit button.
  
 Nice to haves: 
