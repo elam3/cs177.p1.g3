@@ -2,5 +2,5 @@ Project 1 Group 3
 
 Shall function on a mobile browser
 Administrative users are able to start quizes and collect responses
-Student users are able to submit answers and create identification code
-Answers must be collected and displayed
+Student users are able to submit answers
+Answers can be displayed
