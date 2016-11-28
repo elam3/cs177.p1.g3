@@ -1,0 +1,36 @@
+weClick Functional Specification 
+By Owen Goodwin 
+Team (Alex, Ruby, Karen, Edison, Hazel, Owen) 
+ 
+Overview weClick is a service that allows students to take in class quizzes on the web. 
+ 
+Scenarios 
+ 
+Scenario 1: Sam 
+Sam is a teacher that wants quick feedback in class to see how well students are following the lectures. He decides to do a quick survey in class that is graded in real time and lets students see how well they are doing. He uses the weClick to do this.  
+ 
+Students go to the quiz page he provides them, while Sam goes to the admin page. Sam begins the quiz by posting a question in his powerpoint and starts the timer. The students make their selection on their devices. He sees that most of the class has responded by looking at the response counter. He then stops the timer. He clicks on the visualization button and displays a chart of how the students have done. He refreshes and starts the timer over again, this process repeats for about five more questions. 
+ 
+Specification 
+ 
+Administrative Page 
+ 
+●	There will be a Start/Stop button and a timer. When the start button is pressed the timer will start counting up in seconds. When the start/stop button is pressed again the timer will stop. 
+●	There will be a counter which displays the number of responses that are being submitted, so that the teacher knows when they can stop the timer. 
+●	There will be a button that allows the teacher to display the information. 
+●	If they choose to display the information, a bar chart graphic will be shown which displays the number of responses to each question. 
+ 
+ 
+Quiz Page 
+ 
+●	Will display multiple choice radio buttons A-E. Student will be able to make a selection. There will be a submit button which is inactive until the teacher starts the timer. 
+●	When the teacher starts the timer, the page will refresh and students will be allowed to click the submit button. When the timer stops, this button will be greyed out.  
+ 
+Nice to haves: 
+●	different options for visualizing the data ● a way to record the test and save for later. 
+●	A way to author the questions and send to the students so they can visualize on their screens. 
+●	Sending the correct response to the students, or notifying them they got it right. 
+●	Allowing the student to submit text input. (I.e. choice E can be “Other: ____”) 
+●	Admin page: They can select via radio button which was the correct response, which will also be displayed on the bar chart. 
+●	Option to have teacher select a time limit and have timer countdown. 
+ 
