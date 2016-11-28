@@ -14,7 +14,6 @@ class IndexView(generic.ListView):
         """Return the last five published questions."""
         #return Question.objects.order_by('question_text')[:5]
         return Question.objects.order_by('question_text')
-        #return Question.objects.all().order_by('question_text')
 
 class DetailView(generic.DetailView):
     model = Question
@@ -27,7 +26,7 @@ class ResultsView(generic.DetailView):
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
+        selected_choice = question.choice_set.get(choice_text=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Re-display the question voting form.
         return render(request, 'polls/detail.html', {
