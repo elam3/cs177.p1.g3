@@ -27,7 +27,6 @@ def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     try:
         selected_choice_set = question.choice_set.all().filter(choice_text=request.POST['choice'])
-        #selected_choice = question.choice_set.get(choice_text=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Re-display the question voting form.
         return render(request, 'polls/detail.html', {
@@ -35,11 +34,16 @@ def vote(request, question_id):
             'error_message': "You didn't select a choice.",
         })
     else:
-        #selected_choice.votes += 1
-        #selected_choice.save()
         selected_choice_set.update(votes=F('votes')+1)
-        # Always return an HttpResponseRedirect after successfully dealing
-        # with POST data. This prevents data from being posted twice if a
-        # user hits the back button.
-        #return HttpResponseRedirect(reverse('polls:results', args=(question_id,)))
-        return HttpResponseRedirect(reverse('polls:results', args=(question_id)))
+        return HttpResponseRedirect(reverse('polls:detail', args=(question_id)))
+
+def reset(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    c_set = question.choice_set.all()
+    c_set.update(votes=0)
+    return HttpResponseRedirect(reverse('polls:results', args=(question_id)))
+
+def showResults(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    c_set = question.choice_set.all()
+    return HttpResponseRedirect(reverse('polls:results', args=(question_id)))

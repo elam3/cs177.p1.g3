@@ -5,10 +5,14 @@ body {
 
 
 .btn-circle.btn-xl {
+/*
   width: 250px;
   height: 250px;
-  padding: 10px 16px;
-  font-size: 50px;
+*/
+  width: 5rem !important;
+  height: 5rem !important;
+  padding: 0 !important /*10px 16px*/;
+  font-size: 1.5rem !important/*50px*/;
   line-height: 1.33;
   border-radius: 50%;
   background-color:#F79256;
@@ -25,6 +29,10 @@ body {
 }
 
 #resetButton {
+  width: 144.3px;
+}
+
+#submitButton {
   width: 144.3px;
 }
 

@@ -9,21 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="multiple-choice"/>
 
-    <!--script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script-->
-    <script>
-     // Initialize Firebase
-/*
-    var config = {
-        apiKey: "AIzaSyCbAgiS2GHz_1fvasyFqTxoRxT5vLWotTA",
-        authDomain: "weclicker.firebaseapp.com",
-        databaseURL: "https://weclicker.firebaseio.com",
-        storageBucket: "",
-        messagingSenderId: "790459566642"
-    };
-    firebase.initializeApp(config);
-*/
-    </script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -50,24 +35,31 @@
     </nav>
     <div class="container-fluid">
         <div class="row-fluid">
-            <!--div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-12">
                 <div id="controls">
                     <br>
-                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span><h2 id="min">00</h2><h2>:</h2><h2 id="sec">00</h2>
+                    <!--span class="glyphicon glyphicon-time" aria-hidden="true"></span><h2 id="min">00</h2><h2>:</h2><h2 id="sec">00</h2>
                     <br><br>
                     <input type="button" id="startButton" class="btn btn-circle btn-xl" value="Start" ></button>
                     <br><br><br>
                     <p><em>Press the Start button to begin the survey</em></p>
-                    <p><em>Press the Stop button to stop receiving answers</em></p>
+                    <p><em>Press the Stop button to stop receiving answers</em></p-->
                     <br>
                     <br>
-                    <button type="button" id="resultsButton" class="btn btn-lg">Show Results</button>
-                    <button type="button" id="resetButton" class="btn btn-lg">Reset</button>
+		<form action="{% url 'polls:showResults' question.id %}" method="post" style="display:inline-block;">
+            {% csrf_token %}
+            <button type="submit" id="resultsButton" class="btn btn-lg">Show Results</button>
+		</form>
+
+		<form action="{% url 'polls:reset' question.id %}" method="post" style="display:inline-block;">
+            {% csrf_token %}
+            <button type="submit" id="submitButton" class="btn btn-lg">Reset</button>
+		</form>
                 
                 </div>
-            </div-->
+            </div>
             <div class="col-md-6 col-xs-12">
-                <h1>{{ question.question_text }}</h1>
+                <!--h1>{{ question.question_text }}</h1-->
 
                 <br><br><br><br>
                 <canvas id="myChart"></canvas>
@@ -75,12 +67,10 @@
 
                 <script>
                 {% for choice in question.choice_set.all %}
-                    data.push({{choice.votes}});
+                    data[{{forloop.counter0}}] = {{choice.votes}};
                 {% endfor %}
 				draw(data);
                 </script>
-
-                <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
 
             </div>
 

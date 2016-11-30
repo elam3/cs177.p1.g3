@@ -25,9 +25,11 @@ $(document).ready(function(){
         }
     });
 
+/*
     $("#resultsButton").click(function(){
         drawChart();
     });
+*/
 
 /*
     $("#logout").click(function(){
