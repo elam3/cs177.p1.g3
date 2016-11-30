@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.btn-circle.btn-xl {
+/*
+  width: 250px;
+  height: 250px;
+*/
+  width: 5rem !important;
+  height: 5rem !important;
+  padding: 0 !important /*10px 16px*/;
+  font-size: 1.5rem !important/*50px*/;
+  line-height: 1.33;
+  border-radius: 50%;
+  background-color:#F79256;
+
+}
+
+
+/*#controls {
+	text-align: center;
+}*/
+
+.col-xs-6 {
+	margin: 0 auto;
+}
+
+#resetButton {
+  width: 144.3px;
+}
+
+#submitButton {
+  width: 144.3px;
+}
+
+h2 {
+	display: inline;
+}
+
+.glyphicon {
+	font-size: 20px;
+}
+
+.navbar {
+  background-color: #F7D24C;
+  margin-bottom: 50px;
+}
+
+.navbar a {
+  color: #000000;
+}
+
+#brandName {
+  font-size: 25px;
+}
+
+.navbar a:hover {
+    background-color: #F7D24C;
+    color: #000000 ;  
+}
